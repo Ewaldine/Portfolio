@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ewaldine Eises | Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="logo">E.</a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn--small nav__cta">Let's Talk →</a>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="reveal">
+          <p class="eyebrow">My Work</p>
+          <h1 class="title">Some of My <span class="accent">Projects</span></h1>
+          <p class="subtitle">A selection of projects I've built to improve my skills and explore new technologies.</p>
+        </div>
+
+        <!-- data-filter on buttons must match data-category on projects -->
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web Apps</button>
+          <button class="filter-btn" data-filter="tools">Tools</button>
+          <button class="filter-btn" data-filter="personal">Personal</button>
+        </div>
+
+        <div class="grid-3">
+
+          <article class="card project reveal" data-category="web">
+            <div class="project__shot"><img src="assets/Memory%20Card%20Game.png" alt="Memory Card Game screenshot" /></div>
+            <h3>Memory Card Game</h3>
+                      <p>A React memory card game to test your memory and focus.</p>
+            <a href="https://ewaldine.github.io/memory-card/" target="_blank" rel="noopener">View Project →</a>
+          </article>
+
+          <article class="card project reveal" data-category="web">
+            <div class="project__shot"><img src="assets/HelpDesk.png" alt="HelpDesk screenshot" /></div>
+            <h3>HelpDesk</h3>
+            <p>An enterprise IT ticketing system built with ASP.NET Core MVC and Clean Architecture. Features role-based access with Keycloak authentication, SLA breach tracking, and Grafana monitoring, and deploys through an Azure Pipelines CI/CD workflow.</p>
+            <a href="https://github.com/Ewaldine/HelpDesk" target="_blank" rel="noopener">View Project →</a>
+          </article>
+
+          <article class="card project reveal" data-category="web">
+            <div class="project__shot"><img src="assets/Namibia%20Uranium%20Hub.png" alt="Namibia Uranium Hub screenshot" /></div>
+            <h3>Namibia Uranium Hub</h3>
+            <p>A hackathon project showcasing Namibia's uranium sector.</p>
+            <a href="https://ewaldine.github.io/hackathon-namibia-uranium/" target="_blank" rel="noopener">View Project →</a>
+          </article>
+
+          <article class="card project reveal" data-category="web">
+            <div class="project__shot"><img src="assets/SuperhHeroAPI.png" alt="SuperHeroAPI screenshot" /></div>
+            <h3>SuperHeroAPI</h3>
+            <p>A Web API built with ASP.NET Core and Entity Framework Core that serves superhero data from a SQL Server database.</p>
+            <a href="https://github.com/Ewaldine/SuperhHeroAPI" target="_blank" rel="noopener">View Project →</a>
+          </article>
+
+          <article class="card project reveal" data-category="web">
+            <div class="project__shot"><img src="assets/MyWebStore.png" alt="MyWebStore screenshot" /></div>
+            <h3>MyWebStore</h3>
+            <p>An MVC web application with CRUD operations backed by a SQL Server database (SSMS). No live demo, so the link opens the source code.</p>
+            <a href="https://github.com/Ewaldine/MyWebStore" target="_blank" rel="noopener">View Project →</a>
+          </article>
+
+          <article class="card project reveal" data-category="tools">
+            <div class="project__shot"><img src="assets/Calculator.png" alt="Calculator screenshot" /></div>
+            <h3>Calculator</h3>
+            <p>A working calculator for everyday arithmetic.</p>
+            <a href="https://ewaldine.github.io/Calculator/" target="_blank" rel="noopener">View Project →</a>
+          </article>
+
+          <article class="card project reveal" data-category="web">
+            <div class="project__shot"><img src="assets/Weather-App.png" alt="Weather App screenshot" /></div>
+            <h3>Weather App</h3>
+            <p>Check the current weather for any city.</p>
+            <a href="https://ewaldine.github.io/Weather-App/" target="_blank" rel="noopener">View Project →</a>
+          </article>
+
+          <article class="card project reveal" data-category="tools">
+            <div class="project__shot"><img src="assets/Age-Calculator.png" alt="Age Calculator screenshot" /></div>
+            <h3>Age Calculator</h3>
+            <p>Find out your exact age in years, months and days.</p>
+            <a href="https://ewaldine.github.io/Age-Calculator/" target="_blank" rel="noopener">View Project →</a>
+          </article>
+
+          <article class="card project reveal" data-category="web">
+            <div class="project__shot"><img src="assets/3D%20Image%20Gallery.png" alt="3D Image Gallery screenshot" /></div>
+            <h3>3D Image Gallery</h3>
+            <p>An image gallery with a 3D flip animation.</p>
+            <a href="https://ewaldine.github.io/Image-Gallery-With-3D-Flip-Animation/" target="_blank" rel="noopener">View Project →</a>
+          </article>
+
+        </div>
+
+        <div class="more">
+          <a href="https://github.com/Ewaldine?tab=repositories" target="_blank" rel="noopener" class="btn">View More Projects →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year"></span> Ewaldine Eises. All rights reserved.</span>
+      <div class="socials">
+        <a href="https://github.com/Ewaldine" target="_blank" rel="noopener" aria-label="GitHub"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="" /></a>
+        <a href="https://www.linkedin.com/in/ewaldine-eises-568754282/" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" alt="" /></a>
+        <a href="mailto:ewaldineeises05@gmail.com.na" aria-label="Email">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#a77bff" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
